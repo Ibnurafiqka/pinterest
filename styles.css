@@ -1,0 +1,92 @@
+.navbar-brand {
+  font-weight: 500;
+  color: #0657d7;
+  font-size: 24px;
+  transition: 0.3s color;
+  margin-left: 7rem;
+}
+
+.login-button {
+  background-color: #0657d7;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  margin-right: 7rem;
+}
+
+.login-button:hover {
+  background-color: #1990E7;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
+}
+
+/* Section */
+.btn-black {
+  background: #202020;
+  color: white;
+}
+
+.btn-black:hover {
+  border: solid 1.5px #000;
+}
+
+.sub__judul {
+  margin-top: 6rem;
+}
+
+.sub__judul-h2 {
+  font-size: 3.5rem;
+}
+
+.sub__judul p {
+  font-size: 1.25rem;
+}
+
+.sub__judul,
+.btn {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 991px) {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #0657d7;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+    visibility: visible;
+  }
+}
